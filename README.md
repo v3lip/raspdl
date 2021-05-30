@@ -9,6 +9,12 @@ Edit the 3 top variables to fit your needs.
 
 [pass, user, ip]
 
+You will also need sshpass:
+    
+Install through apt/apt-get:
+    
+    apt-get install sshpass
+
 **usage:**
 
     raspdl -r /home/kali/Desktop/hellothere.txt -l hellothere.txt
