@@ -9,9 +9,8 @@ Edit the 3 top variables to fit your needs.
 
 [pass, user, ip]
 
-usage:
+**usage:**
 
 raspdl -r /home/kali/Desktop/hellothere.txt -l hellothere.txt
-
-  -r = remote file path
-  -l = local file path
+    -r = remote file path
+    -l = local file path
