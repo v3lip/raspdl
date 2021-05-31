@@ -1,4 +1,10 @@
 # raspdl
+![N|Solid](https://img.shields.io/github/last-commit/v3lip/PhishingSpammer)
+![N|Solid](https://img.shields.io/github/followers/v3lip?style=social)
+
+
+![N|Solid](https://i.imgur.com/E5ltGFC.png)
+
 Easily download remote files with this script. Yes, I am lazy.
 
 Instead of doing longer commands, you can install this script and do everything very much more easy when you have to download files from for example your Raspberry PI, or anything running SSH really.
