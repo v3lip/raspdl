@@ -5,25 +5,46 @@
 
 ![N|Solid](https://i.imgur.com/E5ltGFC.png)
 
-Easily download remote files with this script. Yes, I am lazy.
+## Intro:
 
-Instead of doing longer commands, you can install this script and do everything very much more easy when you have to download files from for example your Raspberry PI, or anything running SSH really.
+This is a script I made in bash to make downloading files from my Raspberry PI much easier.
+I am a lazy go so therefore making this helps me alot. You can use this to download anything
+through SSH.
 
-Yes, again, I am very lazy.
 
-Edit the 3 top variables to fit your needs.
+## Installation:
+I have this setup like this (you can do this how you want, but I like using it like this because I have alot of
+scripts that I plan to use and I want them in their own folder)
 
-[pass, user, ip]
+First you will need to download sshpass
+´sudo apt-get install sshpass´
 
-You will also need sshpass:
-    
-Install through apt/apt-get:
-    
-    apt-get install sshpass
+I have my script located here:
+´/home/kali/installedScripts/´
 
-**usage:**
+Once you're in the folder of your choosing do:
+´git clone https://github.com/v3lip/raspdl´
+
+After the download you want to edit the file.
+Do ´nano raspdl´/´vim raspdl´ and edit the following variables:
+    pass=PASSWORD
+    user=USERNAME
+    ip=0.0.0.0
+
+Now you're done!
+If you would like to use this script anywhere you are you would want to do this aswell:
+´nano ~/.bashrc´
+
+and add the following line:
+´export PATH="/home/kali/installedScripts/:$PATH"´
+
+NOTE: You would need to edit the /home/kali/installedScripts to your own path where the script you downloaded is located.
+
+
+## usage:
 
     raspdl -r /home/kali/Desktop/hellothere.txt -l hellothere.txt
     
-  * -r = remote file path
-  * -l = local file path
+  * -r    remote file path
+  * -l    local file path
+
