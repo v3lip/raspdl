@@ -17,26 +17,26 @@ I have this setup like this (you can do this how you want, but I like using it l
 scripts that I plan to use and I want them in their own folder)
 
 First you will need to download sshpass
-´sudo apt-get install sshpass´
+`sudo apt-get install sshpass`
 
 I have my script located here:
-´/home/kali/installedScripts/´
+`/home/kali/installedScripts/`
 
 Once you're in the folder of your choosing do:
-´git clone https://github.com/v3lip/raspdl´
+`git clone https://github.com/v3lip/raspdl`
 
 After the download you want to edit the file.
-Do ´nano raspdl´/´vim raspdl´ and edit the following variables:
+Do `nano raspdl`/`vim raspdl` and edit the following variables:
     pass=PASSWORD
     user=USERNAME
     ip=0.0.0.0
 
 Now you're done!
 If you would like to use this script anywhere you are you would want to do this aswell:
-´nano ~/.bashrc´
+`nano ~/.bashrc`
 
 and add the following line:
-´export PATH="/home/kali/installedScripts/:$PATH"´
+`export PATH="/home/kali/installedScripts/:$PATH"`
 
 NOTE: You would need to edit the /home/kali/installedScripts to your own path where the script you downloaded is located.
 
